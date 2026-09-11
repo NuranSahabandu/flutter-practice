@@ -8,8 +8,16 @@ void main() {
         backgroundColor: Colors.brown[700],
         centerTitle: true,
       ),
-      body: Text('Hello, from flutter app')
+      body: const Home(),
     ) 
   ));
 }
 
+class Home extends StatelessWidget {
+  const Home({super.key});
+
+  @override
+  Widget build(BuildContext context) {
+    return const Text('Hello from flutter app');
+  }
+}
